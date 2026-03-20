@@ -1,8 +1,6 @@
-# Real-Time Communication App 🎥
+# Axion 🎥
 
 A comprehensive, production-ready video conferencing and collaboration platform with WebRTC, multi-user support, and advanced features like screen sharing, file sharing, whiteboard, and computer vision integration.
-
-Built for the CodeAlpha Full-Stack Development Internship.
 
 ## 🌟 Features
 
@@ -67,8 +65,8 @@ Built for the CodeAlpha Full-Stack Development Internship.
 
 #### 1. Clone the Repository
 ```bash
-git clone https://github.com/yourusername/CodeAlpha_Real-Time-Communication-App.git
-cd CodeAlpha_Real-Time-Communication-App
+git clone https://github.com/yourusername/Axion.git
+cd Axion
 ```
 
 #### 2. Setup Backend
@@ -94,7 +92,7 @@ Open your browser and navigate to `http://localhost:5173`
 ## 📁 Project Structure
 
 ```
-CodeAlpha_Real-Time-Communication-App/
+Axion/
 ├── client/                      # React frontend
 │   ├── src/
 │   │   ├── components/         # React components
@@ -182,7 +180,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👨‍💻 Author
 
-Built as part of the CodeAlpha Full-Stack Development Internship Program.
+Built by Divith K Rathod.
 
 ## 🙏 Acknowledgments
 
@@ -197,4 +195,4 @@ For issues, feature requests, or questions, please open an issue on GitHub.
 
 ---
 
-**Made with ❤️ by CodeAlpha Interns**
+**Made with ❤️ by Divith K Rathod**

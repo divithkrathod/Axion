@@ -2,7 +2,7 @@
 
 ## System Overview
 
-The Real-Time Communication App is a full-stack application built with modern technologies for real-time video conferencing and collaboration.
+Axion is a full-stack application built with modern technologies for real-time video conferencing and collaboration.
 
 ## Tech Stack
 

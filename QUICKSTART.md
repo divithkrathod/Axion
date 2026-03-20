@@ -1,6 +1,6 @@
 # 🚀 Quick Start Guide
 
-## Real-Time Communication App - Setup & Run
+## Axion - Setup & Run
 
 ### Prerequisites
 - Node.js v16+ and npm v7+
@@ -22,7 +22,7 @@ cp .env.example .env
 
 # Update .env with your MongoDB URI and port
 # Example:
-# MONGODB_URI=mongodb://localhost:27017/realtime-comm
+# MONGODB_URI=mongodb://localhost:27017/axion
 # PORT=5000
 # JWT_SECRET=your_jwt_secret_key
 
@@ -134,7 +134,3 @@ For issues or questions:
 - Review code comments
 - Check browser console for errors
 - Verify all services are running
-
----
-
-**Happy coding! 🎉**

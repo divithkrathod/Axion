@@ -1,6 +1,6 @@
 # API Documentation
 
-This document describes all available API endpoints for the Real-Time Communication App.
+This document describes all available API endpoints for Axion.
 
 ## Base URL
 ```

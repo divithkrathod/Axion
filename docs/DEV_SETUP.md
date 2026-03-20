@@ -10,8 +10,8 @@
 ## Step 1: Clone Repository
 
 ```bash
-git clone https://github.com/yourusername/CodeAlpha_Real-Time-Communication-App.git
-cd CodeAlpha_Real-Time-Communication-App
+git clone https://github.com/yourusername/Axion.git
+cd Axion
 ```
 
 ## Step 2: Setup Backend
@@ -29,7 +29,7 @@ cp .env.example .env
 
 # Edit .env with your configuration:
 PORT=5000
-MONGODB_URI=mongodb://localhost:27017/rtc_app
+MONGODB_URI=mongodb://localhost:27017/axion
 JWT_SECRET=your_super_secret_jwt_key_change_in_production
 NODE_ENV=development
 CORS_ORIGIN=http://localhost:5173

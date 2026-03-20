@@ -1,4 +1,4 @@
-# Contributing to Real-Time Communication App
+# Contributing to Axion
 
 We appreciate your interest in contributing! This document provides guidelines and instructions for contributing.
 

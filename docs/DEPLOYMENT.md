@@ -1,6 +1,6 @@
 # Deployment Guide
 
-This guide covers deployment of the Real-Time Communication App to production.
+This guide covers deployment of Axion to production.
 
 ## Deployment Options
 
@@ -104,7 +104,7 @@ sudo apt-get install -y mongodb-org
 
 # Clone repository
 git clone your-repo-url
-cd CodeAlpha_Real-Time-Communication-App
+cd Axion
 
 # Setup backend
 cd server
