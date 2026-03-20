@@ -2,6 +2,15 @@
 
 This guide covers deployment of Axion to production.
 
+## 📱 Deploying on Mobile Phones (Local Demo)
+
+If you are just presenting the app to a professor and want your teammate to access it on their mobile phone instantly:
+1. Ensure both the PC running the app and the mobile phone are connected to the exact same Wi-Fi network.
+2. Find your PC's local IP address (e.g. `192.168.1.5`).
+3. Run the frontend with: `npm run dev -- --host`.
+4. On the mobile phone browser, navigate to `http://192.168.1.5:5173`.
+*(Note: Mobile browsers may block CV camera access on non-HTTPs local URLs. For a full demo with camera access, deploy using one of the cloud options below.)*
+
 ## Deployment Options
 
 ### Option 1: Heroku

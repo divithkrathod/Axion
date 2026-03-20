@@ -1,0 +1,16 @@
+# Axion Project Requirements
+
+Since this is a modern JavaScript full-stack application, there are no Python requirements like a traditional `requirements.txt` might imply. 
+All Computer Vision features run directly in your browser using **TensorFlow.js**.
+
+Therefore, to run this application, your machine only needs these **two** core software installations:
+
+1. **Node.js** (Version 16 or higher)
+   - Download from: https://nodejs.org/
+   - Description: This runs the JavaScript server.
+
+2. **MongoDB** (Community Edition)
+   - Download from: https://www.mongodb.com/try/download/community
+   - Description: This acts as the database that stores users and messages.
+
+For an extensive, step-by-step tutorial on how to install these and run the app from scratch, please read `BEGINNER_GUIDE.md` in this directory.

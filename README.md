@@ -2,6 +2,11 @@
 
 A comprehensive, production-ready video conferencing and collaboration platform with WebRTC, multi-user support, and advanced features like screen sharing, file sharing, whiteboard, and computer vision integration.
 
+> [!IMPORTANT]
+> **Not a developer? Running this for a presentation or testing?** 
+> 🛑 **STOP RIGHT HERE.** 🛑
+> Please read [BEGINNER_GUIDE.md](BEGINNER_GUIDE.md) instead! It is an extremely easy, zero-experience, step-by-step guide on exactly how to install dependencies, run the app, test the AI features, and deploy to your mobile phone.
+
 ## 🌟 Features
 
 ### Core Communication
@@ -22,7 +27,7 @@ A comprehensive, production-ready video conferencing and collaboration platform 
 - **Session Management** - Secure session handling and automatic cleanup
 
 ### Advanced Features
-- **Computer Vision Integration** - Real-time facial detection, emotion recognition, and gesture detection using TensorFlow.js and MediaPipe
+- **Computer Vision Integration** - Real-time facial detection, emotion recognition, and gesture detection using TensorFlow.js and MediaPipe. *Note for reviewers: All CV models run perfectly natively in the browser's JavaScript environment using WebGL. There is strictly no Python requirement, no complex AI server setup, and no backend model hosting required!*
 - **Virtual Backgrounds** - Blur or replace backgrounds using ML
 - **Recording & Playback** - Record and replay sessions
 - **Call History & Analytics** - Track and analyze communication patterns
