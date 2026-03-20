@@ -41,17 +41,6 @@ app.use(cors({
 app.use(express.json({ limit: '50mb' }));
 app.use(express.urlencoded({ limit: '50mb', extended: true }));
 
-// Database connection
-const connectDB = async () => {
-  try {
-    const conn = await mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/rtc_app');
-    console.log(`✅ MongoDB connected: ${conn.connection.host}`);
-  } catch (error) {
-    console.error(`❌ MongoDB connection error: ${error.message}`);
-    process.exit(1);
-  }
-};
-
 // Routes
 app.use('/api/auth', authRoutes);
 app.use('/api/users', userRoutes);
@@ -77,13 +66,27 @@ app.use((req, res) => {
   res.status(404).json({ message: 'Route not found' });
 });
 
-// Start server
+// Database connection (retries on failure, does not crash server)
+const connectDB = async () => {
+  try {
+    const conn = await mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/rtc_app', {
+      family: 4,
+      serverSelectionTimeoutMS: 10000,
+    });
+    console.log(`✅ MongoDB connected: ${conn.connection.host}`);
+  } catch (error) {
+    console.error(`❌ MongoDB connection error: ${error.message}`);
+    console.log('⚠️  Retrying MongoDB connection in 10s...');
+    setTimeout(connectDB, 10000);
+  }
+};
+
+// Start HTTP server immediately, connect DB in background
 const PORT = process.env.PORT || 5000;
-connectDB().then(() => {
-  httpServer.listen(PORT, () => {
-    console.log(`\n🚀 Server running on http://localhost:${PORT}`);
-    console.log(`📡 Socket.io ready on http://localhost:${PORT}`);
-  });
+httpServer.listen(PORT, () => {
+  console.log(`\n🚀 Server running on http://localhost:${PORT}`);
+  console.log(`📡 Socket.io ready on http://localhost:${PORT}`);
 });
+connectDB();
 
 export { io };
